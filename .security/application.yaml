@@ -1,9 +1,23 @@
-system_id: "APP-002"
-name: "WRONG NAME HERE"
-business_owner: "wrong@company.com"
-technical_owner: "wrong-team"
-data_classification: "internal"
-criticality: "medium"
-regulatory_scope: "none"
-internet_facing: false
-profile: "auto"
+application:
+  system_id: "APP-002"
+  name: "WRONG NAME HERE"
+  business_owner: "wrong@company.com"
+  technical_owner: "wrong-team"
+  business_unit: "Wrong Department"
+  data_classification: "Internal"
+  internet_facing: false
+  regulatory_scope:
+    - HIPAA
+  criticality: "Medium"
+  lifecycle_state: "Active"
+
+security:
+  profile: "auto"
+
+delivery:
+  default_branch: "main"
+  ci_platform: "github-actions"
+
+ownership:
+  team_alias: "hr-engineering"
+  support_email: "hr@company.com"
